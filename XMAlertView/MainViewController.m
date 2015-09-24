@@ -3,7 +3,7 @@
 //  XMAlertView
 //
 //  Created by rgshio on 15/8/19.
-//  Copyright (c) 2015年 hongyin. All rights reserved.
+//  Copyright (c) 2015年. All rights reserved.
 //
 
 #import "MainViewController.h"
@@ -32,7 +32,7 @@
 
 - (IBAction)showAlertView:(id)sender
 {
-    XMAlertView *alertView = [[XMAlertView alloc] initWithTitle:@"demo" message:@"这是一个测试" cancelButtonTitle:@"取消" otherButtonTitles:@"确定"];
+    XMAlertView *alertView = [[XMAlertView alloc] initWithTitle:@"demo" message:@"这是一个测试" cancelButtonTitle:@"取消" otherButtonTitles:nil];
     [alertView show];
     
     alertView.actionBlock = ^(NSInteger buttonIndex) {

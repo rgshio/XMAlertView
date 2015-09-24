@@ -109,8 +109,8 @@
 #pragma mark - 创建Button
 - (void)loadButton
 {
-    CGRect leftBtnFrame;
-    CGRect rightBtnFrame;
+    CGRect leftBtnFrame = CGRectMake(0, 0, 0, 0);
+    CGRect rightBtnFrame = CGRectMake(0, 0, 0, 0);
     
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.messageLabel.frame), kAlertWidth, 1)];
     lineView.backgroundColor = [UIColor lightGrayColor];
@@ -155,7 +155,6 @@
 
 - (void)loadMainView
 {
-
     [self loadTitle];
     
     [self loadMessage];
